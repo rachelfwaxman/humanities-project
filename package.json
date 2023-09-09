@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write src/**/*.{astro,mdx,css,ts,js}"
+    "format": "prettier --write src/**/*.{astro,md,mdx,css,ts,js}"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.0.3",
