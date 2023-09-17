@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://danmartens.com",
+  site: "https://rachelfwaxman.github.io",
   base: "/humanities-project",
   integrations: [mdx(), sitemap()],
 });
