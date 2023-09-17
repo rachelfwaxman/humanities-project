@@ -9,10 +9,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      .header-image {
+        max-height:500px;
+        object-fit:cover;
+        width:100%;
+        object-position: center 10%;
+      }
+    </style>
   </head>
 
   <body>
     <Header title={SITE_TITLE} />
+
+    <img class="header-image" src="/humanities-project/coffee_and_book.jpg"/>
 
     <main>
       <h1>{SITE_TITLE}</h1>
