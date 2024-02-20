@@ -16,16 +16,25 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_TAGLINE } from "../consts";
         width:100%;
         object-position: center 10%;
       }
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
 
   <body>
     <Header title={SITE_TITLE} />
 
-    <img class="header-image" src="/humanities-project/coffee_and_book.jpg"/>
+    <div class="image-container"></div>
+      <img class="header-image" src="/humanities-project/coffee_and_book.jpg"/>
+      <div class="overlay-text">{SITE_TITLE}</div>
+    </div>
 
     <main>
-      <h1>{SITE_TAGLINE}</h1>
+      <h2>{SITE_TAGLINE}</h2>
 
       <p>
         {SITE_DESCRIPTION}
