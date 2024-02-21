@@ -1,11 +1,45 @@
 ---
-import Layout from "../layouts/BlogPost.astro";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_TAGLINE } from "../consts";
 ---
-<Layout
-  title="The Humanities Project Podcast"
-  description="Lorem ipsum dolor sit amet"
-  pubDate={new Date("August 08 2021")}
-  heroImage="/humanities-project/blog-placeholder-about.jpg"
->
 
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      .header-image {
+        max-height:500px;
+        object-fit:cover;
+        width:100%;
+        object-position: center 10%;
+        opacity: .8;
+      }
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3.1em;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header title={SITE_TITLE} />
+
+    <div class="image-container"></div>
+      <img class="header-image" src="/humanities-project/coffee_and_book.jpg"/>
+      <div class="overlay-text">{SITE_TITLE}</div>
+    </div>
+
+    <main>
+   
+    </main>
+
+    <Footer />
+  </body>
+</html>
